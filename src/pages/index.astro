@@ -6,7 +6,22 @@ import arg from '../assets/icons/arg.svg?raw';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Hey, soy Mateo Max <Badge>Disponible para trabajar</Badge></h1>
-		<h2>+3 años de experiencia. Desarrollador web full stack SSR. De Tucuman, Argentina <Fragment set:html={arg} /></h2>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<h1 
+				class="text-white text-5xl font-blod flex flex-row gap-x-4 pb-4"
+			>
+				Hey, soy Mateo Max
+				<div class="flex justify-center items-center">
+					<Badge>Disponible para trabajar</Badge>
+				</div>
+			</h1>
+			<h2 class="text-xl opacity-80">+3 años de experiencia. Desarrollador web full stack SSR. De Tucuman, Argentina <span class="header-flag-container inline-block"><Fragment class="" set:html={arg} /></span>. Especializado en crear aplicaciones unicas</h2>
+		</section>
 	</main>
 </Layout>
+
+<style is:global>
+	.header-flag-container > svg {
+		height: 16px;
+	}
+</style>
